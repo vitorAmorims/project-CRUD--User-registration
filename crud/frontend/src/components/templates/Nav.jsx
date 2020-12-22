@@ -1,5 +1,5 @@
 import "./Nav.css";
-
+import NavItem from './NavItem';
 import React from "react";
 
 export default (props) => {
@@ -7,12 +7,14 @@ export default (props) => {
     <aside className="menu-area">
       <nav className="menu">
         {/* refatorar no final do projeto */}
-        <a href="#/">
+        <NavItem href="#/" icon="fa fa-home" text="Início" />
+        {/* <a href="#/">
           <i className="fa fa-home"></i>Início
-        </a>
-        <a href="#users">
+        </a> */}
+        <NavItem href="#users" icon="fa fa-users" text="Usuários" />
+        {/* <a href="#users">
           <i className="fa fa-users"></i>Usuários
-        </a>
+        </a> */}
       </nav>
     </aside>
   );
