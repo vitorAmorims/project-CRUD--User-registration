@@ -3,9 +3,10 @@ import React from 'react';
 import Header from './Header';
 
 export default props => {
+    // console.log(props);
     return (
         <React.Fragment>
-            <Header />
+            <Header {...props} />
             <main className="content">
                 Conteúdo
             </main>
