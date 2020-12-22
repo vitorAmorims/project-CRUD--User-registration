@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default props => {
     // console.log(props);
     return (
-        <a href={props.href}>
+        <Link to={props.href}>
           <i className={props.icon}></i>{props.text}
-        </a>
+        </Link>
     )
 }
